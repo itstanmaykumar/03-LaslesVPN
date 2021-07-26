@@ -11,6 +11,7 @@
 .container{
     width: 80%;
     padding: 0 10%;
+    margin: 80px 0;
 }
 
 
@@ -74,9 +75,9 @@ nav a{
 
 /* hero section styles */
 #hero{
-    margin: 80px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .hero-box{
     width: 48%;
@@ -84,7 +85,6 @@ nav a{
 .hero-box h1{
     font-size: 3em;
     font-weight: 500;
-    margin-top: 20px;
 }
 .hero-box h1>span{
     font-weight: 700;
@@ -92,6 +92,7 @@ nav a{
 .hero-box p{
     color: dimgray;
     margin: 30px 0;
+    line-height: 25px;
 }
 .hero-box img{
     width: 100%;
@@ -145,4 +146,39 @@ nav a{
 }
 .show-box.no-border{
     border: none;
+}
+
+
+
+
+
+/* features section styles */
+#features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-box{
+    width: 45%;
+}
+.feature-box h1{
+    font-size: 2.7em;
+    font-weight: 500;
+}
+.feature-box p{
+    color: dimgray;
+    margin: 20px 0;
+    font-size: .9em;
+}
+.feature-box .feature-txt{
+    margin: 30px 0;
+    font-size: 1em;
+}
+.feature-box p i{
+    color: #2FAB73;
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+.feature-box img{
+    width: 100%;
 }
