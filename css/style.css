@@ -28,6 +28,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 .logo img{
     width: 30px;
@@ -83,14 +84,14 @@ nav a{
 .hero-box h1{
     font-size: 3em;
     font-weight: 500;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .hero-box h1>span{
     font-weight: 700;
 }
 .hero-box p{
     color: dimgray;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .hero-box img{
     width: 100%;
@@ -102,4 +103,46 @@ nav a{
     color: white;
     font-weight: 500;
     background-color: #F53838;
+}
+
+
+
+
+
+/* showcase section styles */
+#show-container{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px gainsboro;
+}
+.show-box{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    margin: 40px 0;
+    padding: 20px 0;
+    border-right: 2px solid gainsboro;
+}
+.show-box .show-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #FFECEC;
+    border-radius: 50%;
+}
+.show-box .fas{
+    display: block;
+    font-size: 1.2em;
+    color: #F53838;
+}
+.show-box-txt p{
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: dimgray;
+}
+.show-box.no-border{
+    border: none;
 }
