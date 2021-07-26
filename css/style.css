@@ -277,3 +277,32 @@ nav a{
     margin-top: 75px;
     width: 90%;
 }
+
+
+
+
+
+#sponsor{
+    margin: 50px 0;
+}
+#sponsor-container{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px gainsboro;
+}
+#sponsor-container h1{
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 500;
+    color: dimgray;
+    font-size: 2.5em;
+    opacity: .5;
+}
+#sponsor-box{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+#sponsor-container img{
+    width: 100%;
+}
