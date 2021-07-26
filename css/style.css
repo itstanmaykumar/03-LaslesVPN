@@ -7,20 +7,19 @@
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
 }
 .container{
     width: 80%;
     padding: 0 10%;
 }
-img{
-    width: 100%;
-}
+
+
+
 
 
 /* navigation section styles */
 #header-top{
-    margin-top: 20px;
+    margin: 30px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -61,8 +60,46 @@ nav a{
 .sign a{
     margin: auto;
     display: block;
+    color: dimgray;
+    font-weight: 500;
+}
+.sign .active{
     color: black;
 }
-a.active{
-    color: crimson !important;
+
+
+
+
+
+/* hero section styles */
+#hero{
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-box{
+    width: 48%;
+}
+.hero-box h1{
+    font-size: 3em;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.hero-box h1>span{
+    font-weight: 700;
+}
+.hero-box p{
+    color: dimgray;
+    margin: 50px 0;
+}
+.hero-box img{
+    width: 100%;
+}
+.big-btn{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 50px;
+    color: white;
+    font-weight: 500;
+    background-color: #F53838;
 }
