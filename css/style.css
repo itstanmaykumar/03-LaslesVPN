@@ -53,6 +53,7 @@ nav a{
     margin: auto;
     color: dimgray;
     padding: 0 5px;
+    transition: all .2s 0s ease;
 }
 .sign{
     display: flex;
@@ -63,7 +64,10 @@ nav a{
     margin: auto;
     display: block;
     color: dimgray;
-    font-weight: 500;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .3s 0s ease;
 }
 .sign .active{
     color: black;
@@ -104,6 +108,7 @@ nav a{
     color: white;
     font-weight: 500;
     background-color: #F53838;
+    transition: box-shadow .5s 0s ease;
 }
 
 
@@ -133,6 +138,8 @@ nav a{
     height: 60px;
     background: #FFECEC;
     border-radius: 50%;
+    transition: background .5s 0s ease,
+                box-shadow .5s 0s ease;
 }
 .show-box .fas{
     display: block;
@@ -182,6 +189,9 @@ nav a{
 .feature-box img{
     width: 100%;
 }
+.feature-box p span{
+    transition: color .2s 0s ease;
+}
 
 
 
@@ -202,6 +212,8 @@ nav a{
     padding-bottom: 5%;
     border: 2px solid gainsboro;
     border-radius: 10px;
+    transition: border-color .3s 0s ease,
+                box-shadow .3s 0s ease;
 }
 .price-box-top{
     display: flex;
@@ -243,10 +255,13 @@ nav a{
 .price-box-btm a{
     margin: 20px 0;
     padding: 10px 35px;
-    font-weight: 600;
+    font-weight: 500;
     color: #F53838;
     border: 2px solid #F53838;
     border-radius: 20px;
+    transition: background .3s 0s ease,
+                color .3s 0s ease,
+                box-shadow .3s 0s ease;
 }
 
 
@@ -271,7 +286,9 @@ nav a{
     line-height: 2em;
 }
 #global p span{
+    cursor: pointer;
     font-weight: 500;
+    transition: color .2s 0s ease;
 }
 #global img{
     margin-top: 75px;
@@ -289,6 +306,7 @@ nav a{
 #sponsor-container{
     border-radius: 10px;
     box-shadow: 0 10px 20px gainsboro;
+    transition: box-shadow .2s 0s ease;
 }
 #sponsor-container h1{
     padding-top: 50px;
@@ -337,10 +355,13 @@ nav a{
     grid-gap: 30px;
 }
 .testimonial-box{
-    border: 2px solid gainsboro;
+    border: 2px solid #FFBABA;
     border-radius: 10px;
     padding: 20px;
     margin: 50px 0;
+    cursor: pointer;
+    transition: box-shadow .2s 0s ease,
+                transform .3s 0s ease;
 }
 .test-top{
     display: flex;
@@ -446,7 +467,7 @@ footer{
     justify-content: center;
     align-items: center;
     background: white;
-    box-shadow: 0 5px 10px #c5c5c5;
+    box-shadow: 0 5px 10px #C5C5C5;
 }
 .foo-icon i{
     color: #F53838;
@@ -473,4 +494,78 @@ footer{
     font-size: .9em;
     color: dimgray;
     display: block;
+}
+
+
+
+
+
+
+
+
+
+/* Animations */
+@media only screen and (min-width: 992px) {
+    /* navigation */
+    nav a:hover{
+        color: #F53838;
+    }
+    .sign a:hover{
+        background: #F53838;
+        box-shadow: 0 10px 20px #FFBABA;
+        color: white;
+    }
+
+    /* hero */
+    .big-btn:hover{
+        box-shadow: 0 20px 40px #FFBABA;
+    }
+
+    /* showcase */
+    .show-icon:hover{
+        background: white;
+        box-shadow: 5px 10px 30px #CFCFCF;
+    }
+
+    /* features */
+    .feature-box p span:hover{
+        color: #2FAB73;
+    }
+
+    /* pricing */
+    .price-box:hover{
+        border-color: white;
+        box-shadow: 0 0px 40px #CFCFCF;
+    }
+    .price-box:hover a{
+        background-color: #F53838;
+        color: white;
+    }
+    .price-box a:hover{
+        box-shadow: 0 10px 20px #FFBABA;
+    }
+
+    /* global */
+    #global p span:hover{
+        color: #F53838;
+    }
+
+    /* sponsor */
+    #sponsor-container:hover{
+        box-shadow: 0px 10px 20px #FFBABA;
+    }
+
+    /* testimonials */
+    .testimonial-box:hover{
+        box-shadow: 0 10px 20px gainsboro;
+        transform: translateY(-10px);
+    }
+
+    /* footer */
+    .foo-box p span:hover{
+        color: #F53838;
+    }
+    .foo-link a:hover{
+        color: #F53838;
+    }
 }
