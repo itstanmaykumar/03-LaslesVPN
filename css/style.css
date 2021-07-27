@@ -401,3 +401,76 @@ nav a{
     color: dimgray;
     margin: 20px 0;
 }
+
+
+
+
+
+/* footer section styles */
+footer{
+    padding: 75px 10%;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foo-box{
+    width: 50%;
+}
+.foo-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.foo-box .logo{
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.foo-box p{
+    width: 70%;
+    color: dimgray;
+}
+.foo-box p span{
+    font-weight: 500;
+}
+.foo-social{
+    margin: 40px 0;
+    display: flex;
+}
+.foo-icon{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 5px 10px #c5c5c5;
+}
+.foo-icon i{
+    color: #F53838;
+    display: block;
+}
+#copyright{
+    opacity: .5;
+}
+.foo-right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.foo-link{
+    display: flex;
+    flex-direction: column;
+}
+.foo-link h2{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.foo-link a{
+    margin: 10px 0;
+    font-size: .9em;
+    color: dimgray;
+    display: block;
+}
